@@ -1,0 +1,89 @@
+.books_gif {
+  position: relative;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+}
+/* ************************************************************** */
+.search_box_container {
+  padding-top: 50px;
+  position: sticky;
+  top: 50px;
+  min-height: 100px;
+  max-height: 150px;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.search_box {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  height: 50px;
+  min-width: 100px;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 50px;
+  padding: 2px 20px;
+}
+.search_box_input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  &:focus-visible {
+    outline: none;
+  }
+  margin-right: 20px;
+}
+.search_box:focus-within {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+  outline: none;
+}
+
+.search_icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+} /* ************************************************************** */
+.all_books {
+  padding: 20px;
+  display: grid;
+  column-gap: 200px;
+  row-gap: 50px;
+  justify-items: center;
+}
+@media (max-width: 500px) {
+  .all_books {
+    padding: 0px;
+  }
+}
+.all_books_grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.all_books_list {
+  grid-template-columns: 1fr;
+}
+
+/* *********************** */
+.list_grid_switch_container {
+  display: flex;
+  width: auto;
+  height: 100px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+/* ****************************** */
+.book_details_modal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  overflow: hidden;
+  height: auto;
+}

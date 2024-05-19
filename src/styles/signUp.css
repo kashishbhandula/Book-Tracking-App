@@ -1,0 +1,28 @@
+.sign_up_box_inp {
+  border-radius: 10px;
+  height: 40px;
+  font-size: 16px;
+}
+.sign_up_box_btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 150px;
+  align-self: center;
+  background-color: blue;
+  color: white;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.sign_up_txt {
+  font-size: 25px;
+  align-self: center;
+}
+.already_have_account {
+  align-self: center;
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+  cursor: pointer;
+}
+
