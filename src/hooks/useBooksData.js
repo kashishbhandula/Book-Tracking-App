@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { updateBooks } from "../store/books";
+import { updateBooks, updateIsSearching } from "../store/books";
 import {useSelector} from "react-redux"
 export default function useBooksData() {
   const [booksDetail, setBookDetail] = useState();
@@ -16,6 +16,7 @@ export default function useBooksData() {
       .then((res) => res.json())
       .then((res) => {
         updateBooksDataHandler(res);
+        dispatch(updateIsSearching(false));
       });
   };
   useEffect(() => {

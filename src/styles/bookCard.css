@@ -29,8 +29,7 @@
   overflow: hidden;
   border-radius: 8px;
   right: 2%;
-  /* transform: translateX(100%); */
-  top: 40px;
+  top: 10px;
 }
 .option {
   display: flex;
