@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Book Tracking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a book tracking app created using ReactJS, CSS, Redux, React Router Dom, and other libraries/tools. It allows users to manage their collection of books.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+### Prerequisites
+Make sure you have Node.js and npm installed on your machine. You can download them from [Node.js](https://nodejs.org/).
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/kashishbhandula/Video-Player.git
+    cd Video-Player
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-### `npm test`
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Open your browser and navigate to `http://localhost:3000`.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Core Specifications
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Login Page
+-  A login page for user authentication and access to the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Fetch and Display Books
+- Fetched book collection from a mock API.
+- Displayed the list of books with images, titles, and authors.
+- Implemented a switch between grid view and list view (optional).
 
-### `npm run eject`
+### 3. Book Details Modal
+- Displayed book description, and image in a modal on item click.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Search and Filter
+- Allowed users to filter books using a search bar, enabling filtering across all fields.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 5. Responsiveness
+- Ensured the app is responsive for both desktop and mobile devices.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Additional Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Lazy Loading
+- Implemented lazy loading for book images to improve performance.
 
-## Learn More
+### 2. Drag and Drop (DnD)
+- Allowed users to rearrange their book collection using drag-and-drop functionality.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Error Boundary
+- Implemented an error boundary component to gracefully handle errors within the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 5. Custom Hook
+- Created a custom hook for managing the state or performing a specific task within the app.
 
-### Code Splitting
+### 6. Redux Integration
+- Integrated Redux for state management.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 7. Re-rendering Issue Test
+- Tested app re-rendering efficiency and optimized if needed.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 8. API Integration
+- Integrated Google Books API to fetch book data.
