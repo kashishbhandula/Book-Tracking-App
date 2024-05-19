@@ -54,9 +54,6 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 ### 1. Lazy Loading
 - Implemented lazy loading for book images to improve performance.
 
-### 2. Drag and Drop (DnD)
-- Allowed users to rearrange their book collection using drag-and-drop functionality.
-
 ### 4. Error Boundary
 - Implemented an error boundary component to gracefully handle errors within the app.
 
