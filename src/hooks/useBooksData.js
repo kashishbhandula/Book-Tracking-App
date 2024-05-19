@@ -20,6 +20,6 @@ export default function useBooksData() {
   };
   useEffect(() => {
     getBooksList();
-  }, []);
+  }, [search]);
   return [booksDetail, updateBooksDataHandler];
 }
