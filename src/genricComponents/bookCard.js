@@ -58,6 +58,7 @@ export default function BookCard({ bookDetail, id }) {
         className="book_thumbnail"
         src={bookDetail?.imageLinks?.thumbnail}
         alt="Book cover"
+        loading="lazy"
       />
       <div className="book_details">
         <div className="detail_item">
@@ -66,11 +67,11 @@ export default function BookCard({ bookDetail, id }) {
         </div>
         <div className="detail_item">
           <span className="title">Authors:</span>
-          <span className="detail">Pokeman</span>
+          <span className="detail">{bookDetail?.authors?.join(", ")}</span>
         </div>
         <div className="detail_item">
-          <span className="title">Genres:</span>
-          <span className="detail">{bookDetail?.authors?.join(", ")}</span>
+          <span className="title">Published Date:</span>
+          <span className="detail">{bookDetail?.publishedDate}</span>
         </div>
       </div>
     </div>
