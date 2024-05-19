@@ -28,9 +28,9 @@
   width: 200px;
   overflow: hidden;
   border-radius: 8px;
-  left: 0%;
-  transform: translateX(92%);
-  top: 30px;
+  right: 2%;
+  /* transform: translateX(100%); */
+  top: 40px;
 }
 .option {
   display: flex;
